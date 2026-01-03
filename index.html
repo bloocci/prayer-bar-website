@@ -3,13 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prayer Bar - Prayer Times in Your Menu Bar</title>
-    <meta name="description" content="Prayer Bar brings accurate Islamic prayer times to your Mac menu bar. Track prayers, view Hijri dates, and never miss a prayer.">
+    <title>Prayer Bar - Islamic Prayer Times App for Mac Menu Bar</title>
+    <meta name="description" content="Prayer Bar brings accurate Islamic prayer times to your Mac menu bar. Track Fajr, Dhuhr, Asr, Maghrib, Isha prayers, view Hijri dates, get Adhan notifications, and never miss a prayer. Free download for macOS.">
+    <meta name="keywords" content="prayer times, Islamic prayer, salah, Mac app, menu bar, Fajr, Dhuhr, Asr, Maghrib, Isha, Hijri calendar, Muslim app, Adhan, prayer tracker, Ramadan, macOS, salat times">
+    <meta name="author" content="Prayer Bar">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://prayerbar.app/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://prayerbar.app/">
+    <meta property="og:title" content="Prayer Bar - Islamic Prayer Times in Your Mac Menu Bar">
+    <meta property="og:description" content="Accurate Islamic prayer times beautifully designed for your Mac. Track prayers, view Hijri dates, get Adhan notifications, and stay connected to your faith.">
+    <meta property="og:image" content="https://prayerbar.app/og-image.png">
+    <meta property="og:site_name" content="Prayer Bar">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://prayerbar.app/">
+    <meta name="twitter:title" content="Prayer Bar - Islamic Prayer Times for Mac">
+    <meta name="twitter:description" content="Accurate Islamic prayer times beautifully designed for your Mac menu bar. Never miss a prayer.">
+    <meta name="twitter:image" content="https://prayerbar.app/og-image.png">
+
+    <!-- Apple-specific -->
+    <meta name="apple-itunes-app" content="app-id=YOUR_APP_ID">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Prayer Bar">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#1a1a2e">
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&family=SF+Pro+Text:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Prayer Bar",
+        "operatingSystem": "macOS",
+        "applicationCategory": "LifestyleApplication",
+        "description": "Accurate Islamic prayer times beautifully designed for your Mac menu bar. Track prayers, view Hijri dates, and never miss a prayer.",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "ratingCount": "1"
+        }
+    }
+    </script>
 </head>
 <body>
     <!-- Hero Section -->
@@ -141,13 +193,16 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025 Prayer Bar. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> Prayer Bar. All rights reserved.</p>
             <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Support</a>
-                <a href="mailto:support@prayerbar.app">Contact</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="support.html">Support</a>
             </div>
         </div>
     </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

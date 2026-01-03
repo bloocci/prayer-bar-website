@@ -1,0 +1,6 @@
+# robots.txt for prayerbar.app
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://prayerbar.app/sitemap.xml

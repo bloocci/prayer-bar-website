@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Prayer Bar</title>
+    <title>Privacy Policy - Prayer Bar | Islamic Prayer Times App for Mac</title>
+    <meta name="description" content="Prayer Bar privacy policy. Learn how we protect your data. Location data stays on device, no tracking, no analytics. Your privacy is our priority.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://prayerbar.app/privacy.html">
+    <meta property="og:title" content="Privacy Policy - Prayer Bar">
+    <meta property="og:description" content="Learn how Prayer Bar protects your privacy. No tracking, no analytics, your data stays on your device.">
+    <meta property="og:url" content="https://prayerbar.app/privacy.html">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
@@ -111,7 +118,7 @@
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025 Prayer Bar. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> Prayer Bar. All rights reserved.</p>
             <div class="footer-links">
                 <a href="privacy.html">Privacy Policy</a>
                 <a href="terms.html">Terms of Service</a>
@@ -119,5 +126,8 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

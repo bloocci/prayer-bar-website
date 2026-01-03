@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service - Prayer Bar</title>
+    <title>Terms of Service - Prayer Bar | Islamic Prayer Times App for Mac</title>
+    <meta name="description" content="Prayer Bar terms of service. Read about our terms, acceptable use, and policies for using the Prayer Bar Mac app.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://prayerbar.app/terms.html">
+    <meta property="og:title" content="Terms of Service - Prayer Bar">
+    <meta property="og:description" content="Terms of service for Prayer Bar, the Islamic prayer times app for Mac.">
+    <meta property="og:url" content="https://prayerbar.app/terms.html">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
@@ -126,7 +133,7 @@
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025 Prayer Bar. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> Prayer Bar. All rights reserved.</p>
             <div class="footer-links">
                 <a href="privacy.html">Privacy Policy</a>
                 <a href="terms.html">Terms of Service</a>
@@ -134,5 +141,8 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
