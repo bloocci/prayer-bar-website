@@ -71,12 +71,13 @@ p {
 
 .btn-primary {
     background: var(--accent);
-    color: white;
+    color: #ffffff !important;
 }
 
 .btn-primary:hover {
     background: var(--accent-dark);
     transform: scale(1.02);
+    color: #ffffff !important;
 }
 
 .btn-large {
@@ -435,12 +436,13 @@ footer {
 
 .btn-secondary {
     background: var(--background-secondary);
-    color: var(--text-primary);
+    color: var(--text-primary) !important;
     margin-top: 16px;
 }
 
 .btn-secondary:hover {
-    background: var(--border);
+    background: #e5e5e7;
+    color: var(--text-primary) !important;
 }
 
 /* Dark Mode */
