@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Node (if adding build tools later)
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+
+# Build output
+dist/
+build/
