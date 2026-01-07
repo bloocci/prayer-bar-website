@@ -55,63 +55,50 @@
         </div>
     </section>
 
-    <!-- Screenshot Section: Menu Bar -->
-    <section class="showcase">
-        <div class="showcase-content">
-            <span class="showcase-label">Menu Bar</span>
-            <h2>Prayer times at a glance</h2>
-            <p>Check upcoming prayers without interrupting your workflow. Always accessible, never in the way.</p>
-        </div>
-        <div class="showcase-image">
-            <img src="screenshot-06.jpg" alt="Prayer Bar Menu Bar Interface">
-        </div>
-    </section>
-
-    <!-- Screenshot Section: Notifications -->
-    <section class="showcase">
-        <div class="showcase-content">
-            <span class="showcase-label">Notifications</span>
-            <h2>Smart alerts & Adhan sounds</h2>
-            <p>Choose your favorite Adhan from renowned reciters. Get reminded before each prayer with customizable alerts.</p>
-        </div>
-        <div class="showcase-image">
-            <img src="screenshot-04.jpg" alt="Prayer Bar Notifications and Adhan Settings">
-        </div>
-    </section>
-
-    <!-- Screenshot Section: Customization -->
-    <section class="showcase">
-        <div class="showcase-content">
-            <span class="showcase-label">Customization</span>
-            <h2>Make it yours</h2>
-            <p>Personalize your menu bar display with multiple icon styles, accent colors, and layout options.</p>
-        </div>
-        <div class="showcase-image">
-            <img src="screenshot-01.jpg" alt="Prayer Bar Customization Options">
-        </div>
-    </section>
-
-    <!-- Screenshot Section: Statistics -->
-    <section class="showcase">
-        <div class="showcase-content">
-            <span class="showcase-label">Statistics</span>
-            <h2>Track your spiritual journey</h2>
-            <p>View your prayer history, build streaks, and stay consistent with detailed statistics and a monthly calendar.</p>
-        </div>
-        <div class="showcase-image">
-            <img src="screenshot-05.jpg" alt="Prayer Bar Statistics and Tracking">
-        </div>
-    </section>
-
-    <!-- Screenshot Section: Location -->
-    <section class="showcase">
-        <div class="showcase-content">
-            <span class="showcase-label">Location</span>
-            <h2>Accurate times, anywhere</h2>
-            <p>Automatic location detection or manual city search. Get precise prayer times wherever you are.</p>
-        </div>
-        <div class="showcase-image">
-            <img src="screenshot-03.jpg" alt="Prayer Bar Location Settings">
+    <!-- Feature Slideshow -->
+    <section class="slideshow">
+        <div class="slideshow-wrapper">
+            <div class="slideshow-left">
+                <div class="slide-text" data-index="0">
+                    <span class="slide-label">Menu Bar</span>
+                    <h2>Prayer times at a glance</h2>
+                    <p>Check upcoming prayers without interrupting your workflow. Always accessible, never in the way.</p>
+                </div>
+                <div class="slide-text" data-index="1" style="display:none;">
+                    <span class="slide-label">Notifications</span>
+                    <h2>Smart alerts & Adhan sounds</h2>
+                    <p>Choose your favorite Adhan from renowned reciters. Get reminded before each prayer with customizable alerts.</p>
+                </div>
+                <div class="slide-text" data-index="2" style="display:none;">
+                    <span class="slide-label">Customization</span>
+                    <h2>Make it yours</h2>
+                    <p>Personalize your menu bar display with multiple icon styles, accent colors, and layout options.</p>
+                </div>
+                <div class="slide-text" data-index="3" style="display:none;">
+                    <span class="slide-label">Statistics</span>
+                    <h2>Track your spiritual journey</h2>
+                    <p>View your prayer history, build streaks, and stay consistent with detailed statistics and a monthly calendar.</p>
+                </div>
+                <div class="slide-text" data-index="4" style="display:none;">
+                    <span class="slide-label">Location</span>
+                    <h2>Accurate times, anywhere</h2>
+                    <p>Automatic location detection or manual city search. Get precise prayer times wherever you are.</p>
+                </div>
+                <div class="slide-nav">
+                    <button class="nav-dot active" data-index="0"></button>
+                    <button class="nav-dot" data-index="1"></button>
+                    <button class="nav-dot" data-index="2"></button>
+                    <button class="nav-dot" data-index="3"></button>
+                    <button class="nav-dot" data-index="4"></button>
+                </div>
+            </div>
+            <div class="slideshow-right">
+                <img class="slide-image" data-index="0" src="screenshot-06.jpg" alt="Menu Bar">
+                <img class="slide-image" data-index="1" src="screenshot-04.jpg" alt="Notifications" style="display:none;">
+                <img class="slide-image" data-index="2" src="screenshot-01.jpg" alt="Customization" style="display:none;">
+                <img class="slide-image" data-index="3" src="screenshot-05.jpg" alt="Statistics" style="display:none;">
+                <img class="slide-image" data-index="4" src="screenshot-03.jpg" alt="Location" style="display:none;">
+            </div>
         </div>
     </section>
 
@@ -224,6 +211,31 @@
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Slideshow
+        const texts = document.querySelectorAll('.slide-text');
+        const images = document.querySelectorAll('.slide-image');
+        const dots = document.querySelectorAll('.nav-dot');
+        let current = 0;
+
+        function goToSlide(n) {
+            texts.forEach(t => t.style.display = 'none');
+            images.forEach(i => i.style.display = 'none');
+            dots.forEach(d => d.classList.remove('active'));
+
+            texts[n].style.display = 'block';
+            images[n].style.display = 'block';
+            dots[n].classList.add('active');
+            current = n;
+        }
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => goToSlide(parseInt(dot.dataset.index)));
+        });
+
+        setInterval(() => {
+            goToSlide((current + 1) % 5);
+        }, 5000);
     </script>
 </body>
 </html>
