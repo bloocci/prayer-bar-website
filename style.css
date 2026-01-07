@@ -118,7 +118,7 @@ body {
 }
 
 .showcase:nth-child(even) {
-    background: var(--bg-secondary);
+    background: var(--bg);
 }
 
 .showcase-content {
@@ -269,7 +269,7 @@ body {
 .cta {
     padding: 120px 24px;
     text-align: center;
-    background: var(--bg-secondary);
+    background: var(--bg);
 }
 
 .cta h2 {
@@ -462,7 +462,7 @@ footer {
 
 /* Support Page */
 .support-page .contact-section {
-    background: var(--bg-secondary);
+    background: #1d1d1f;
     padding: 32px;
     border-radius: 16px;
     text-align: center;
