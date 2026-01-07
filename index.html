@@ -3,229 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PrayerBar - Islamic Prayer Times App for Mac Menu Bar</title>
-    <meta name="description" content="PrayerBar brings accurate Islamic prayer times to your Mac menu bar. Track Fajr, Dhuhr, Asr, Maghrib, Isha prayers, view Hijri dates, get Adhan notifications, and never miss a prayer. Free download for macOS.">
-    <meta name="keywords" content="prayer times, Islamic prayer, salah, Mac app, menu bar, Fajr, Dhuhr, Asr, Maghrib, Isha, Hijri calendar, Muslim app, Adhan, prayer tracker, Ramadan, macOS, salat times">
-    <meta name="author" content="PrayerBar">
+    <title>Prayer Bar - Islamic Prayer Times for Mac</title>
+    <meta name="description" content="Prayer Bar brings accurate Islamic prayer times to your Mac menu bar. Track Fajr, Dhuhr, Asr, Maghrib, Isha prayers, view Hijri dates, get Adhan notifications, and never miss a prayer.">
+    <meta name="keywords" content="prayer times, Islamic prayer, salah, Mac app, menu bar, Fajr, Dhuhr, Asr, Maghrib, Isha, Hijri calendar, Muslim app, Adhan, prayer tracker, Ramadan, macOS">
+    <meta name="author" content="Prayer Bar">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://prayerbar.app/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://prayerbar.app/">
-    <meta property="og:title" content="PrayerBar - Islamic Prayer Times in Your Mac Menu Bar">
-    <meta property="og:description" content="Accurate Islamic prayer times beautifully designed for your Mac. Track prayers, view Hijri dates, get Adhan notifications, and stay connected to your faith.">
+    <meta property="og:title" content="Prayer Bar - Islamic Prayer Times in Your Mac Menu Bar">
+    <meta property="og:description" content="Accurate Islamic prayer times beautifully designed for your Mac. Track prayers, view Hijri dates, get Adhan notifications.">
     <meta property="og:image" content="https://prayerbar.app/og-image.png">
-    <meta property="og:site_name" content="PrayerBar">
-    <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://prayerbar.app/">
-    <meta name="twitter:title" content="PrayerBar - Islamic Prayer Times for Mac">
-    <meta name="twitter:description" content="Accurate Islamic prayer times beautifully designed for your Mac menu bar. Never miss a prayer.">
+    <meta name="twitter:title" content="Prayer Bar - Islamic Prayer Times for Mac">
+    <meta name="twitter:description" content="Accurate Islamic prayer times beautifully designed for your Mac menu bar.">
     <meta name="twitter:image" content="https://prayerbar.app/og-image.png">
 
-    <!-- Apple-specific -->
-    <meta name="apple-itunes-app" content="app-id=YOUR_APP_ID">
+    <!-- Apple -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="PrayerBar">
-
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#1a1a2e">
+    <meta name="apple-mobile-web-app-title" content="Prayer Bar">
+    <meta name="theme-color" content="#22c55e">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&family=SF+Pro+Text:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "PrayerBar",
-        "operatingSystem": "macOS",
-        "applicationCategory": "LifestyleApplication",
-        "description": "Accurate Islamic prayer times beautifully designed for your Mac menu bar. Track prayers, view Hijri dates, and never miss a prayer.",
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5",
-            "ratingCount": "1"
-        }
-    }
-    </script>
 </head>
 <body>
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <div class="app-icon">
-                <img src="app-icon.png" alt="PrayerBar App Icon">
+                <img src="app-icon.png" alt="Prayer Bar App Icon">
             </div>
-            <h1>PrayerBar</h1>
-            <p class="tagline">Prayer times in your menu bar</p>
+            <h1>Prayer Bar</h1>
+            <p class="tagline">Islamic prayer times in your menu bar</p>
             <p class="description">
-                Accurate Islamic prayer times, beautifully designed for your Mac.
-                Track your prayers, view Hijri dates, and stay connected to your faith.
+                Accurate prayer times, Hijri calendar, and Adhan notifications.
+                Beautifully designed for your Mac.
             </p>
-            <div class="cta-buttons">
-                <a href="#" class="btn btn-primary">
-                    <svg class="apple-logo" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-                    </svg>
-                    Download for Mac
-                </a>
-            </div>
-            <p class="availability">Requires macOS 13.0 or later</p>
-        </div>
-        <div class="hero-image">
-            <img src="screenshot-04.jpg" alt="PrayerBar App Screenshot - Smart Alerts and Adhan Sounds">
-        </div>
-    </section>
-
-    <!-- Screenshots Gallery -->
-    <section class="screenshots">
-        <h2>Screenshots</h2>
-        <div class="screenshots-carousel">
-            <div class="screenshot-item">
-                <img src="screenshot-06.jpg" alt="Menu bar interface">
-            </div>
-            <div class="screenshot-item">
-                <img src="screenshot-01.jpg" alt="Customizable display options">
-            </div>
-            <div class="screenshot-item">
-                <img src="screenshot-03.jpg" alt="Location-based prayer times">
-            </div>
-            <div class="screenshot-item">
-                <img src="screenshot-04.jpg" alt="Smart alerts and Adhan sounds">
-            </div>
-            <div class="screenshot-item">
-                <img src="screenshot-05.jpg" alt="Prayer statistics and tracking">
-            </div>
-            <div class="screenshot-item">
-                <img src="screenshot-07.jpg" alt="Prayer Bar Pro">
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features">
-        <h2>Everything you need</h2>
-        <p class="section-subtitle">Designed for Muslims who want a simple, beautiful way to track prayer times.</p>
-
-        <div class="features-grid">
-            <div class="feature">
-                <div class="feature-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"/>
-                        <path d="M12 6v6l4 2"/>
-                    </svg>
-                </div>
-                <h3>Accurate Prayer Times</h3>
-                <p>Precise calculations using trusted methods including ISNA, Muslim World League, and more.</p>
-            </div>
-
-            <div class="feature">
-                <div class="feature-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-                        <line x1="16" y1="2" x2="16" y2="6"/>
-                        <line x1="8" y1="2" x2="8" y2="6"/>
-                        <line x1="3" y1="10" x2="21" y2="10"/>
-                    </svg>
-                </div>
-                <h3>Hijri Calendar</h3>
-                <p>Always know the Islamic date with automatic Hijri calendar display.</p>
-            </div>
-
-            <div class="feature">
-                <div class="feature-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                        <polyline points="22 4 12 14.01 9 11.01"/>
-                    </svg>
-                </div>
-                <h3>Prayer Tracking</h3>
-                <p>Mark prayers as complete and build streaks to stay consistent.</p>
-            </div>
-
-            <div class="feature">
-                <div class="feature-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
-                        <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
-                    </svg>
-                </div>
-                <h3>Smart Notifications</h3>
-                <p>Get reminded before each prayer with customizable alerts.</p>
-            </div>
-
-            <div class="feature">
-                <div class="feature-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="5"/>
-                        <line x1="12" y1="1" x2="12" y2="3"/>
-                        <line x1="12" y1="21" x2="12" y2="23"/>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-                        <line x1="1" y1="12" x2="3" y2="12"/>
-                        <line x1="21" y1="12" x2="23" y2="12"/>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-                    </svg>
-                </div>
-                <h3>Ramadan Mode</h3>
-                <p>Special features for Ramadan including Suhoor and Iftar times.</p>
-            </div>
-
-            <div class="feature">
-                <div class="feature-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                        <line x1="8" y1="21" x2="16" y2="21"/>
-                        <line x1="12" y1="17" x2="12" y2="21"/>
-                    </svg>
-                </div>
-                <h3>Menu Bar Native</h3>
-                <p>Lives in your menu bar. Always accessible, never in the way.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Download Section -->
-    <section class="download">
-        <div class="download-content">
-            <h2>Ready to get started?</h2>
-            <p>Download PrayerBar and never miss a prayer again.</p>
-            <a href="#" class="btn btn-primary btn-large">
+            <a href="https://apps.apple.com/app/prayer-bar/id6740043339" class="btn-download">
                 <svg class="apple-logo" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
                 </svg>
                 Download for Mac
             </a>
-            <p class="free-note">Free with optional Pro upgrade</p>
+            <p class="availability">Free download · macOS 14.0+</p>
         </div>
+    </section>
+
+    <!-- Screenshot Section: Menu Bar -->
+    <section class="showcase">
+        <div class="showcase-content">
+            <span class="showcase-label">Menu Bar</span>
+            <h2>Prayer times at a glance</h2>
+            <p>Check upcoming prayers without interrupting your workflow. Always accessible, never in the way.</p>
+        </div>
+        <div class="showcase-image">
+            <img src="screenshot-06.jpg" alt="Prayer Bar Menu Bar Interface">
+        </div>
+    </section>
+
+    <!-- Screenshot Section: Notifications -->
+    <section class="showcase">
+        <div class="showcase-content">
+            <span class="showcase-label">Notifications</span>
+            <h2>Smart alerts & Adhan sounds</h2>
+            <p>Choose your favorite Adhan from renowned reciters. Get reminded before each prayer with customizable alerts.</p>
+        </div>
+        <div class="showcase-image">
+            <img src="screenshot-04.jpg" alt="Prayer Bar Notifications and Adhan Settings">
+        </div>
+    </section>
+
+    <!-- Screenshot Section: Customization -->
+    <section class="showcase">
+        <div class="showcase-content">
+            <span class="showcase-label">Customization</span>
+            <h2>Make it yours</h2>
+            <p>Personalize your menu bar display with multiple icon styles, accent colors, and layout options.</p>
+        </div>
+        <div class="showcase-image">
+            <img src="screenshot-01.jpg" alt="Prayer Bar Customization Options">
+        </div>
+    </section>
+
+    <!-- Screenshot Section: Statistics -->
+    <section class="showcase">
+        <div class="showcase-content">
+            <span class="showcase-label">Statistics</span>
+            <h2>Track your spiritual journey</h2>
+            <p>View your prayer history, build streaks, and stay consistent with detailed statistics and a monthly calendar.</p>
+        </div>
+        <div class="showcase-image">
+            <img src="screenshot-05.jpg" alt="Prayer Bar Statistics and Tracking">
+        </div>
+    </section>
+
+    <!-- Screenshot Section: Location -->
+    <section class="showcase">
+        <div class="showcase-content">
+            <span class="showcase-label">Location</span>
+            <h2>Accurate times, anywhere</h2>
+            <p>Automatic location detection or manual city search. Get precise prayer times wherever you are.</p>
+        </div>
+        <div class="showcase-image">
+            <img src="screenshot-03.jpg" alt="Prayer Bar Location Settings">
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="features">
+        <h2>Everything you need</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-icon">🕐</div>
+                <h3>Accurate Prayer Times</h3>
+                <p>ISNA, Muslim World League, and more calculation methods</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📅</div>
+                <h3>Hijri Calendar</h3>
+                <p>Always know the Islamic date</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔔</div>
+                <h3>Smart Notifications</h3>
+                <p>Customizable alerts before each prayer</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🌙</div>
+                <h3>Ramadan Mode</h3>
+                <p>Suhoor and Iftar times during Ramadan</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📊</div>
+                <h3>Prayer Tracking</h3>
+                <p>Mark prayers and build streaks</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🎨</div>
+                <h3>Beautiful Themes</h3>
+                <p>Multiple accent colors to match your style</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pro Section -->
+    <section class="pro">
+        <div class="pro-content">
+            <span class="pro-badge">Pro</span>
+            <h2>Unlock the full experience</h2>
+            <p>Get premium Adhan sounds, detailed statistics, accent colors, and more with a one-time purchase.</p>
+            <div class="pro-price">$9.99 <span>one-time</span></div>
+        </div>
+        <div class="pro-image">
+            <img src="screenshot-07.jpg" alt="Prayer Bar Pro Features">
+        </div>
+    </section>
+
+    <!-- Download CTA -->
+    <section class="cta">
+        <h2>Ready to get started?</h2>
+        <p>Download Prayer Bar and never miss a prayer again.</p>
+        <a href="https://apps.apple.com/app/prayer-bar/id6740043339" class="btn-download btn-large">
+            <svg class="apple-logo" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            Download for Mac
+        </a>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <p>&copy; <span id="year"></span> PrayerBar. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> Prayer Bar</p>
             <div class="footer-links">
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms of Service</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
                 <a href="support.html">Support</a>
             </div>
         </div>
     </footer>
+
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
